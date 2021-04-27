@@ -1,29 +1,20 @@
 ---
 layout: post
-title:  "Welcome to Jekyll! Yay yay"
+title:  "jekyll & mathjax set up"
 date:   2021-04-26 17:13:32 +0200
-categories: jekyll update
+categories: general
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Opening a blog in which I can write about math is what I wanted to do these days. To do so, combining Jekyll and MathJax is a nice way.
 
-Jekyll requires blog post files to be named according to the following format:
+One advice to do so is to read well [Jekyll docs][jekyll-docs] and [MathJax website][mathjax-web] because they show the newest information. 
 
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+Finally you will be able to use mathematical characters 
 $$ x = y^5 $$
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+like this.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Good luck!
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+[mathjax-web]: https://www.mathjax.org/
