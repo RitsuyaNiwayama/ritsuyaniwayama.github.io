@@ -32,7 +32,8 @@ which means $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability.
 <h1>Step 3</h1>
 Based on it, we can prove that $$ E\lvert f(X_n)-f(X) \rvert \overset{n \to \infty}{\longrightarrow} 0,$$ if f is bounded and uniformly continuous.
 
-For all $$\epsilon$$, there is a $$\delta$$ such that if $$\lvert X_n-X \rvert \lt \delta, \lvert f(X_n)-f(X) \rvert \lt \epsilon /2$$. Let us suppose $$\lvert f(x) 1rvert \lt M $$.Then if $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability,
+For all $$\epsilon$$, there is a $$\delta$$ such that if $$\lvert X_n-X \rvert \lt \delta, \lvert f(X_n)-f(X) \rvert \lt \epsilon /2$$. Let us suppose $$\lvert f(x) 1rvert \lt M $$.Then if $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability, by setting n large, we can make $$  \mu(\lvert X_n-X \rvert \geq \epsilon/M). $$
+
 
 
 
