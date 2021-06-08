@@ -9,7 +9,7 @@ This blog post shows that if a sequence of random variables converges $$P$$-a.s.
 
 Let $$X,X_n (n=1,2,...)$$ be real value random variables. Let ($$ S,\bf{B},\mu $$ ) be a probability space.
 <h1>Step 1</h1>
-We will firstly prove that $$ X_n \overset{n \to \infty}{\longrightarrow} X, \quad P$$-a.s. then $$ \lim_{n \to +\infty} \lVert X_n-X \rVert _0 = 0$$, where $$ \lVert X \rVert_0= \int  \min (1,\lvert X \rvert) d\mu$$. This can be proved by dominated convergence theory. Namely,
+We will firstly prove that $$ X_n \overset{n \to \infty}{\longrightarrow} X, \quad P$$-a.s. then $$ \lim_{n \to +\infty} \lVert X_n-X \rVert _0 = 0$$, where $$ \lVert X \rVert_0= \int  \min (1,\lvert X \rvert) d\mu$$, using Lebesgue's dominated convergence theory. Namely,
 $$ \lim_{n \to +\infty} \lVert X_n-X \rVert_0= \lim_{n \to +\infty}\int  \min (1,\lvert X_n-X \rvert) d\mu= \int  \lim_{n \to +\infty} \min (1,\lvert X_n-X \rvert) d\mu=\int  \min (1,0) d\mu=0$$
 
 Let us notice that we can use Lebegue's dominated convergence theory because
