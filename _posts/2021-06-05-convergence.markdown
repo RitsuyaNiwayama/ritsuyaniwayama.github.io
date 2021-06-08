@@ -32,9 +32,16 @@ which means $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability.
 <h1>Step 3</h1>
 Based on it, we can prove that $$ E\lvert f(X_n)-f(X) \rvert \overset{n \to \infty}{\longrightarrow} 0,$$ if f is bounded and uniformly continuous.
 
-For all $$\epsilon$$, there is a $$\delta$$ such that if $$\lvert X_n-X \rvert \lt \delta, \lvert f(X_n)-f(X) \rvert \lt \epsilon /2$$. Let us suppose $$\lvert f(x) 1rvert \lt M $$.Then if $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability, by setting n large, we can make $$  \mu(\lvert X_n-X \rvert \geq \epsilon/M). $$
+For all $$\epsilon \gt 0$$, there is a $$\delta$$ such that if $$\lvert X_n-X \rvert \lt \delta, \lvert f(X_n)-f(X) \rvert \lt \epsilon /2$$. Let us suppose $$\lvert f(x) \rvert \lt M $$.Then if $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability, by setting n large, we can make $$  \mu(\lvert X_n-X \rvert \geq \delta) \lt \epsilon/4M. $$ Under this condition,
 
+$$ E\lvert f(X_n)-f(X) \rvert =$$
 
+$$\int_{\lvert X_n-X \rvert \lt \delta} \lvert f(X_n)-f(X) \rvert d\mu + \int_{\lvert X_n-X \rvert \geq \delta} \lvert f(X_n)-f(X) \rvert d\mu  <$$
+
+$$\epsilon /2 + \int_{\lvert X_n-X \rvert \geq \delta} \lvert 2M \rvert d\mu <\epsilon$$
+
+<h1>Step 4</h1>
+As the characteristic function of a probability measure is bounded and uniformly continuous, $$ E\lvert \exp (i \theta X_n)-\exp(i \theta X) \rvert \overset{n \to \infty}{\longrightarrow} 0.$$ This means $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ weakly.
 
 
 
