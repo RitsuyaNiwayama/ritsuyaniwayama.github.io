@@ -15,7 +15,7 @@ $$ \lim_{n \to +\infty} \lVert X_n-X \rVert_0= \lim_{n \to +\infty}\int  \min (1
 Let us notice that we can use Lebegue's dominated convergence theory because
 
 $$min(1,f) \lt 1$$ and $$\int 1 d\mu = 1 \lt \infty$$
-
+<h1>Step 2</h1>
 Then we can prove that the convergence in probability as well. In fact,
 
 $$\delta 1_{(\lvert X \rvert \geq \delta)} \leq \min (1,\lvert X \rvert) $$
@@ -29,10 +29,10 @@ Therefore, for any $$\delta$$
 $$ \lim_{n \to +\infty} \mu(\lvert X_n-X \rvert \geq \delta)= 0, $$
 
 which means $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability.
-
+<h1>Step 3</h1>
 Based on it, we can prove that $$ E\lvert f(X_n)-f(X) \rvert \overset{n \to \infty}{\longrightarrow} 0,$$ if f is bounded and uniformly continuous.
 
-For all $$\epsilon$$, there is a $$\delta$$ such that if $$\lvert X_n-X \rvert \lt \delta, f(x)\lvert f(X_n)-f(X) \rvert \lt \epsilon /2$$
+For all $$\epsilon$$, there is a $$\delta$$ such that if $$\lvert X_n-X \rvert \lt \delta, \lvert f(X_n)-f(X) \rvert \lt \epsilon /2$$. Let us suppose $$\lvert f(x) 1rvert \lt M $$.Then if $$ X_n \overset{n \to \infty}{\longrightarrow} X$$ in probability,
 
 
 
