@@ -47,9 +47,9 @@ $$\leq E \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T 
 
 Let us evaluate the first term. We focus on the fact that, as $$ (Y_n \overset{w}{\longrightarrow} c (\in \mathbb{R}^{d_2}) )$$, $$Y_n$$ also converges in probability. Therefore, for any $$ \delta $$, for all $$\epsilon>0$$, there is an $$ N$$ , $$ P(\lvert Y_n-Y \rvert \geq \delta) \lt \epsilon/4$$ if $$ n>N. $$In addition, $$ \exp (i \theta_1^T x + i \theta_2^T y)$$ is uniformly continuous function of $$(x,y)$$. Therefore, for all $$\epsilon>0$$, there is a $$\delta$$ fulfilling, $$ \lvert \exp (i \theta_1^T x_1 + i \theta_2^T y_1)-  \exp (i \theta_1^T x_2 + i \theta_2^T y_2) \rvert <\epsilon/4$$ if $$\lvert (x_1,y_1)-(x_2,y_2)\rvert< \delta. $$ Based on these, if $$n$$ is large enough,
 
-$ E\lvert \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert $$
+$ E\lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert $
 
-$$=\int_{\lvert Y_n-c \rvert \lt \delta} \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert dP + \int_{\lvert Y_n-c \rvert \geq \delta} \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert dP  <$$
+$$=\int_{\lvert Y_n-c \rvert \lt \delta} \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert dP + \int_{\lvert Y_n-c \rvert \geq \delta} \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert dP$$
 
 $$\lt \epsilon /4 + \int_{\lvert Y_n-c \rvert \geq \delta}  2  dP <\epsilon/2$$
 
