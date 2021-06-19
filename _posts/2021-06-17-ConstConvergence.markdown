@@ -58,6 +58,6 @@ The second term will become $$<\epsilon/2$$ if $$n$$ is large enough because $$ 
 
 for all bounded and coutinuous functions. Therefore,
 
-$$\leq E \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert + \lvert E(\exp (i \theta_1^T X_n + i \theta_2^T c)) - E(\exp (i \theta_1^T X + i \theta_2^T c)) \rvert \lt \epsilon$$
+$$E \lvert \exp (i \theta_1^T X_n + i \theta_2^T Y_n) - \exp (i \theta_1^T X_n + i \theta_2^T c) \rvert + \lvert E(\exp (i \theta_1^T X_n + i \theta_2^T c)) - E(\exp (i \theta_1^T X + i \theta_2^T c)) \rvert \lt \epsilon$$
 
 for any $$\epsilon \gt 0.$$ This means $$ (X_n, Y_n) \overset{w}{\longrightarrow} (X,c) $$.
