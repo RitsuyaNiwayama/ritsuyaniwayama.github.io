@@ -46,4 +46,4 @@ $$\sup_{\lambda \in \Lambda}E[\lvert X_\lambda \rvert : \lvert X_\lambda \rvert 
 Based on the sufficient condition given, this value converges to zero when $$ m \longrightarrow \infty.$$ Therefore,$$ (X_\lambda )_{\lambda \in \Lambda}$$ are uniformly integrable.
 
 <h1>A special case</h1>
-Especially, if there is a $$\delta > 0 $$, and if $$\sup_{\lambda \in \Lambda} E[\lvert X_\lambda \rvert^{1+\delta} ] \lt \infty,$$ $$ (X_\lambda )_{\lambda \in \Lambda}$$ are uniformly integrable.
+Especially, if there is a $$\delta > 0 $$, and if $$\sup_{\lambda \in \Lambda} E[\lvert X_\lambda \rvert^{1+\delta} ] \lt \infty,$$ $$ (X_\lambda )_{\lambda \in \Lambda}$$ are uniformly integrable (by taking $$\phi (x) = x^\delta $$).
