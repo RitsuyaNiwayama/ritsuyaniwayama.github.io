@@ -45,5 +45,5 @@ By taking $$\sup$$ in regard to $$\lambda,$$ We obtain
 $$\sup_{\lambda \in \Lambda}E[\lvert X_\lambda \rvert : \phi ( \lvert X_\lambda \rvert ) \gt \phi (m) ] \lt \sup_{\lambda \in \Lambda} E[\lvert X_\lambda \rvert \phi ( \lvert X_\lambda \rvert )]/ \phi(m) = Const / \phi(m).$$
 Based on the sufficient condition given, this value converges to zero when $$ m \longrightarrow \infty.$$ Therefore,$$ (X_\lambda )_{\lambda \in \Lambda}$$ are uniformly integrable.
 
-<h1>a special case</h1>
+<h1>A special case</h1>
 Especially, if there is a $$\delta > 0 $$, and if $$\sup_{\lambda \in \Lambda} E[\lvert X_\lambda \rvert^{1+\delta} ] \lt \infty,$$ $$ (X_\lambda )_{\lambda \in \Lambda}$$ are uniformly integrable.
