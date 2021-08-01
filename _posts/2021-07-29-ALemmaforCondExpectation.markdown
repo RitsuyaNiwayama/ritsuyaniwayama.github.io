@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "G measurable r.v.s go out of conditional expectations"
+title: "Pulling out what is known property: a proof"
 date: 2021-07-29 5:00:30 -0000
 categories: Probability
 page.mathjax: true
@@ -84,7 +84,7 @@ Such $$Z_n s$$ fulfill $$E[Z_nX:A]=E[Z_n E[X\mid \mathcal{G}]:A]$$. We will show
 
 Can we use the dominated convergence theorem to the right hand? Yees. $$\lvert Z_n E[X\mid \mathcal{G}]\rvert=$$
 
-$$\lvert E[Z_nX\mid \mathcal{G}]\rvert \leq E[\lvert Z_nX\rvert \mid \mathcal{G}]\leq E[\lvert ZX\rvert \mid \mathcal{G}]$$. Then,$$E[E[\lvert ZX\rvert \mid \mathcal{G}]=E[\lvert ZX\rvert] \lt \infty$$.Therefore, $$\lim_{n \to +\infty}E[Z_nE[X\mid \mathcal{G}]:A]=E[ZE[X\mid \mathcal{G}]:A]$$
+$$\lvert E[Z_nX\mid \mathcal{G}]\rvert \leq E[\lvert Z_nX\rvert \mid \mathcal{G}]\leq E[\lvert ZX\rvert \mid \mathcal{G}]$$. Then, $$E[E[\lvert ZX\rvert \mid \mathcal{G}]]=E[\lvert ZX\rvert] \lt \infty$$.Therefore, $$\lim_{n \to +\infty}E[Z_nE[X\mid \mathcal{G}]:A]=E[ZE[X\mid \mathcal{G}]:A]$$
 
 
 Overall, this means$$E[ZX: A]=\lim_{n \to +\infty}E[Z_nX:A]=\lim_{n \to +\infty}E[Z_n E[X\mid \mathcal{G}]:A]=E[ZE[X\mid \mathcal{G}]:A]$$ Thus, there RN-derivatives on $$\mathcal{G}$$ are a.s. equivalent. Namely, $$ E[ZX\mid \mathcal{G}]=ZE[X \mid \mathcal{G}]$$.
