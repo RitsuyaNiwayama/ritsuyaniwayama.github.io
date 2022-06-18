@@ -1,21 +1,26 @@
 ---
 layout: post
-title: "1 week thermodynamics"
+title: "Theoretical thermodynamics for chemists: week 1"
 date: 2022-06-04 5:00:30 -0000
 categories: Thermodynamics
 page.mathjax: true
 ---
-A big project, understanding on thermodynamics for the protein science, starts here. In this series of posts, I will review basic results of thermodynamics needed to this end.
+Understanding thermodynamics for the protein science is the final goal of blog posts starting here. Before dealing with such an advanced topic, I will review thermodynamics from a theoreitical physics. Like theories for other domains such as quantum physics, there are axioms in themodynamics. If we assume these axioms, we can derive theorems. Then, if this theorems can sufficiently explain phenomena in the real world, axioms and theorems are justified or validated.
+
+In this blog post, we will not go back to each axiom nor prove each theorem. We will just use them as known theory explaining realities. We will present key ideas of thermodynamics in a mathematically structured manner, and we will limit our subjects on ones related to chemical thermodynamics. This will be useful for chemists, who felt logical structure of thermodynamics is ambiguous when we learnt it, reading famous textbooks on physical chemistry.
+
 <h1>Intensive variable</h1>
-We think about a symple system whose entropy, S, is given Let $$(\Omega,\mathcal{F},P)$$ be a probability space. $$N$$ ($$\subset \Omega$$) is called null set if $$N$$ fulfils
-$$ N \subset \widetilde{N}$$, $$P(\widetilde{N})=0$$. The set of all null sets for a given probability measure $$P$$ will write here $$\mathcal{N}^P$$. If $$\mathcal{N}^P \subset \mathcal{F}$$, the probability measure ($$\mathcal{F},P$$) is complete, which is the definition of the completeness. Completion means "adding $$\mathcal{N}^P$$ to $$\mathcal{F}$$ so that $$P$$ is complete". Below, we describe a concrete process of the completion.
+We think about a symple system whose entropy, S. This is a function of the energy, U and other additive variables. $$S=S(U,X_1,,,X_t)$$. Axioms of thermodynamics require that $$B \stackrel{\text{def.}}{=} \frac{\partial S}{\partial U}.$$
+This is the inverse temperature. As its name indicates inverse temperature is equal to $$1/T$$, where $$T$$ is the absolute temperature. According to a theorem, $$S$$ is a convex function, when its variables are all additive. 
 
+An assumption of the thermodynamics tells us that, the inverse temperature is always positive, and its minimum is 0, while it is not finite. Therefore, we can solve the equation $$S=S(U,X_1,,,X_t)$$ about $$U$$. Thus, we can derive $$U=U(S,X_1,,,X_t)$$.
 
-<h1>An extension of the sigma algebra</h1>
-
-$$\widetilde{\mathcal{F}} \stackrel{\text{def.}}{=} \{B \subset \Omega; \text{There exists } A,\widetilde{A}\in \mathcal{F}, A\subset B \subset \widetilde{A}, P(\widetilde{A} \setminus A)=0\}$$
-
-First, we prove the proposition that $$ \widetilde{\mathcal{F}} = \sigma[\mathcal{F} \cup \mathcal{N}^P]$$. The right side is the minimum sigma algebra including $$\mathcal{F} \cup \mathcal{N}^P$$. Let us prove the proposition.
+<!--
+<h1>Gibbs free energy</h1>
+Gibbs free energy is defined by
+$$G \stackrel{\text{def.}}{=} [U(S,V,N)-ST+PV] A,\widetilde{A}\in \mathcal{F}, A\subset B \subset \widetilde{A}, P(\widetilde{A} \setminus A)=0\}$$
+<h1>Principle of Gibbs free energy maximization</h1>
+ $$ \widetilde{\mathcal{F}} = \sigma[\mathcal{F} \cup \mathcal{N}^P]$$. The right side is the minimum sigma algebra including $$\mathcal{F} \cup \mathcal{N}^P$$. Let us prove the proposition.
 
 First, we show $$ \widetilde{\mathcal{F}} \subset \sigma[\mathcal{F} \cup \mathcal{N}^P]$$. Let us select arbitrarily a $$ B \in \widetilde{\mathcal{F}}$$. There exists $$A,\widetilde{A}\in \mathcal{F}, A\subset B \subset \widetilde{A}, P(\widetilde{A} \setminus A)=0$$. Because $$B \setminus A \subset \widetilde{A} \setminus A$$ and $$P(\widetilde{A} \setminus A)=0$$, $$B \setminus A \in \mathcal{N}^P$$. Thus $$B(=A+ B \setminus A) \in \sigma[\mathcal{F} \cup \mathcal{N}^P]$$.
 
@@ -48,3 +53,4 @@ $$\mathcal{N}^\widetilde{P} \subset \mathcal{N}^P$$: Let be $$B \in \mathcal{N}^
 $$\mathcal{N}^\widetilde{P} \supset \mathcal{N}^P$$: Let be $$N \in \mathcal{N}^P$$. This means there is $$A (\in \widetilde{F}) \supset N$$, fulfiling $$P(A)=0$$. From the definition of $$\widetilde{P}$$, $$\widetilde{P}(A)=0$$. Therefore $$N \in \mathcal{N}^\widetilde{P}$$. Thus, $$\mathcal{N}^\widetilde{P} \supset \mathcal{N}^P$$.
 
 Thus, $$(\widetilde{F},\widetilde{P})$$ is complete.
+-->
